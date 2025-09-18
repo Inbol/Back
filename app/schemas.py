@@ -38,3 +38,8 @@ class EnterpriseResponse(BaseModel):
 class LoginRequest(BaseModel):
     email: EmailStr
     password: str
+
+# Schema qiue pide losn datos del predict
+class PredictRequest(BaseModel):
+    data: dict
+

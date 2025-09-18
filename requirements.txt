@@ -23,3 +23,6 @@ alembic==1.11.1
 pydantic[email]
 passlib[bcrypt]
 python-jose
+numpy
+joblib
+pandas
