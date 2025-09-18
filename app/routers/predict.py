@@ -9,7 +9,7 @@ router = APIRouter(prefix="/predict", tags=["Predict"])
 
 # Carpeta donde está este script
 BASE_DIR = os.path.dirname(__file__)
-modelo_path = os.path.join(BASE_DIR, "modelo.joblib")
+modelo_path = os.path.join(BASE_DIR, "modelo.pkl")
 
 modelo = joblib.load(modelo_path)
 
@@ -20,5 +20,4 @@ def predict(request: PredictRequest):
     prediccion = modelo.predict(data)
 
     # Predecir resultado
-    return {"message:", prediccion}
-
+    return {"message": prediccion.tolist()}

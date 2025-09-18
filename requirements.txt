@@ -26,3 +26,4 @@ python-jose
 numpy
 joblib
 pandas
+scikit-learn==1.5.2
