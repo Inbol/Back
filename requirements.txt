@@ -20,3 +20,6 @@ websockets==15.0.1
 sqlalchemy==2.0.22
 psycopg[binary]
 alembic==1.11.1
+pydantic[email]
+passlib[bcrypt]
+python-jose
